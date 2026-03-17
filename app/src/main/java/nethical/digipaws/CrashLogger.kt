@@ -31,4 +31,15 @@ class CrashLogger(private val context: Context) : Thread.UncaughtExceptionHandle
 
         defaultHandler?.uncaughtException(thread, throwable) // Let the system handle the crash
     }
+
+    companion object {
+        fun getCrashLog(context: Context): String {
+            val logFile = File(context.filesDir, "crash_log.txt")
+            return if (logFile.exists()) {
+                logFile.readText()
+            } else {
+                ""
+            }
+        }
+    }
 }

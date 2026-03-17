@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/nav_home" />
+
+    <item
+        android:id="@+id/nav_focus"
+        android:icon="@drawable/baseline_focus_24"
+        android:title="@string/nav_focus" />
+
+    <item
+        android:id="@+id/nav_blockers"
+        android:icon="@drawable/baseline_block_24"
+        android:title="@string/nav_blockers" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="@string/nav_settings" />
+
+</menu>
